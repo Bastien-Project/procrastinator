@@ -10,6 +10,11 @@ setTimeout(function () {
 
   setTimeout(function () {
     messageElement.innerHTML = "";
+    var alreadyNotedElement = document.getElementById('alreadynoted');
+    if (alreadyNotedElement) {
+      alreadyNotedElement.style.visibility = 'visible';
+    }
+
 
     var ratingElement = document.createElement("div");
     ratingElement.textContent = "Veuillez noter le jeu :";
@@ -64,7 +69,7 @@ function sendDataToDatabase(rating) {
   var data = {
     rating: rating
   };
-  
+
   fetch('game.php', {
     method: 'POST',
     headers: {
@@ -72,12 +77,12 @@ function sendDataToDatabase(rating) {
     },
     body: JSON.stringify(data)
   })
-  .then(response => {
-    if (!response.ok) {
-      throw new Error('Erreur lors de l\'envoi des données à la base de données');
-    }
-  })
-  .catch(error => {
-    console.error('Erreur :', error);
-  });
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Erreur lors de l\'envoi des données à la base de données');
+      }
+    })
+    .catch(error => {
+      console.error('Erreur :', error);
+    });
 }
