@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #fff;
+    margin: 0;
+    color: #000;
+    text-wrap: nowrap;
+}
+
+/* Header (nav)*/
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.3);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 0;
+    height: 80px;
+    box-shadow: 0 0px 20px 2px rgba(0, 0, 0, 0.1);
+}
+
+nav h1,
+nav .onglets {
+    margin: 0;
+    align-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 50px;
+    width: 20%;
+}
+
+nav .onglets p {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.onglets a {
+    font-size: 20px;
+}
+
+figure,
+figure img {
+    margin: 0;
+    width: 100%;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+    color: #000;
+}
+
+/*Fin header (nav)*/
+
+/*Section Principale*/
+/*Acceuil*/
+#accueil {
+    background: url('../images/bkg1v2.jpg');
+    /*background-repeat: no-repeat;*/
+    background-position: center;
+    /*background-size: cover;*/
+    height: 100vh;
+}
+
+.centerAccueil div {
+    position: absolute;
+    margin-top: 45vh;
+    background-color: #000;
+    color: #fff;
+    border: solid;
+    border-radius: 60px;
+    width: min-content;
+    padding: 0 30px;
+    height: 80px;
+}
+
+.centerAccueil div h2 {
+    text-transform: uppercase;
+    font-size: 350%;
+    align-content: center;
+    margin-top: 40px;
+}
+
+.centerAccueil div h2 a {
+    color: #fff;
+}
+
+.centerAccueil img {
+    margin: 0;
+    height: auto;
+    width: 100%;
+}
+
+.zoom-in-zoom-out {
+    margin: 24px;
+    width: 50px;
+    height: 50px;
+    background: green;
+    animation: zoom-in-zoom-out 2s ease-out infinite;
+}
+
+@keyframes zoom-in-zoom-out {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    50% {
+        transform: scale(1.2, 1.2);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+/*Les div*/
+div {
+    display: flex;
+    justify-content: center;
+}
+
+div div {
+    width: 100%;
+}
+
+#about {
+    text-align: center;
+    padding: 0 20px;
+}
+
+.aboutText p {
+    font-size: 18px;
+    line-height: 1.6;
+    padding-inline: 4%;
+    text-align: justify;
+    text-wrap: wrap;
+}
+
+.aboutImg img {
+    object-fit: cover;
+    width: inherit;
+}
+
+.game {
+    height: 84vh;
+    text-align: center;
+    align-items: center;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+#message img {
+    height: 116vh;
+    z-index: 2;
+}
+
+/*Fin des div*/
+/*Fin acceuil*/
+/*Fin Section Principale*/
+
+/*Footer*/
+footer {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+footer .social-media p {
+    margin-right: 15px;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    padding: 5px;
+    text-align: center;
+    width: 20px;
+    cursor: pointer;
+}
+
+footer i {
+    color: white;
+}
+
+/*Fin footer */
