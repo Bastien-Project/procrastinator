@@ -121,6 +121,12 @@ a:visited {
     }
 }
 
+section h2 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: xx-large;
+}
+
 /*Les div*/
 div {
     display: flex;
@@ -129,6 +135,7 @@ div {
 
 div div {
     width: 100%;
+    margin-top: -130px;
 }
 
 #about {
@@ -144,19 +151,20 @@ div div {
     text-wrap: wrap;
 }
 
-.aboutImg img {
+.aboutImg img, .aboutImg a {
     object-fit: cover;
     width: inherit;
 }
 
 .game {
-    height: 84vh;
+    height: 83vh;
     text-align: center;
     align-items: center;
     font-size: 60px;
     font-weight: 700;
     display: flex;
     flex-direction: column;
+
 }
 
 #message img {
