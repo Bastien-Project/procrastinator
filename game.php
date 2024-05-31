@@ -13,7 +13,7 @@
 
     $data = file_get_contents('php://input');
 
-    $remote = $_SERVER['REMOTE_ADDR'];
+    $remote = hash('sha512', $_SERVER['REMOTE_ADDR']);
 
     $selectRemote = $conn->prepare("SELECT * FROM note_game WHERE remote_addr = :remote_addr");
     $selectRemote->bindParam(':remote_addr', $remote);
