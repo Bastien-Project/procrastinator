@@ -135,6 +135,9 @@ div {
 
 div div {
     width: 100%;
+}
+
+.game div {
     margin-top: -130px;
 }
 
