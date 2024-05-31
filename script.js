@@ -62,8 +62,8 @@ setTimeout(function () {
     }
 
     messageElement.appendChild(ratingElement);
-  }, 2000);
-}, 2000);
+  }, 10000);
+}, 5000);
 
 function sendDataToDatabase(rating) {
   var data = {
